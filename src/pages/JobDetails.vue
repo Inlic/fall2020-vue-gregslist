@@ -2,7 +2,7 @@
   <div id="job-details" class="container">
     <div class="row pt-3" v-if="job._id">
       <div class="col-6">
-        <h2>{{job.jobTitle}} - {{job.company}} - {{job.hours}}</h2>
+        <h2> Position: {{job.jobTitle}} - {{job.company}} - Hours: {{job.hours}}</h2>
         <p>${{job.rate.toFixed(2)}}</p>
         <h4>{{job.description}}</h4>
         <div class="d-flex justify-content-between">

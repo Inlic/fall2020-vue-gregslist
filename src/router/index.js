@@ -8,6 +8,10 @@ import Cars from '../pages/Cars.vue'
 import HouseDetails from '../pages/HouseDetails.vue'
 // @ts-ignore
 import Houses from '../pages/Houses.vue'
+// @ts-ignore
+import JobDetails from '../pages/JobDetails.vue'
+// @ts-ignore
+import Jobs from '../pages/Jobs.vue'
 
 
 Vue.use(VueRouter)
@@ -32,6 +36,16 @@ const routes = [
     path: '/houses/:id',
     name: 'HouseDetails',
     component: HouseDetails
+  },
+  {
+    path: '/jobs',
+    name: 'Jobs',
+    component: Jobs
+  },
+  {
+    path: '/jobs/:id',
+    name: 'JobDetails',
+    component: JobDetails
   },
   {
     path: '*',
