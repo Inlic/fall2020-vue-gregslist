@@ -1,9 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+// @ts-ignore
 import CarDetails from '../pages/CarDetails.vue'
+// @ts-ignore
 import Cars from '../pages/Cars.vue'
+// @ts-ignore
 import HouseDetails from '../pages/HouseDetails.vue'
+// @ts-ignore
 import Houses from '../pages/Houses.vue'
+
 
 Vue.use(VueRouter)
 

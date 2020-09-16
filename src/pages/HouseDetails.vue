@@ -2,7 +2,7 @@
   <div id="house-details" class="container">
     <div class="row pt-3" v-if="house._id">
       <div class="col-6">
-        <h2>{{house.bedrooms}} - {{house.bathrooms}} - {{house.levels}} - {{house.year}}</h2>
+        <h2>{{house.bedrooms}} Bedroom(s) - {{house.bathrooms}} Bathroom(s) - {{house.levels}} Floor(s) - Built: {{house.year}}</h2>
         <p>${{house.price.toFixed(2)}}</p>
         <h4>{{house.description}}</h4>
         <div class="d-flex justify-content-between">

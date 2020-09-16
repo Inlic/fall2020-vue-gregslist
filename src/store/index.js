@@ -31,7 +31,7 @@ export default new Vuex.Store({
     addHouse(state, house) {
       state.houses.push(house)
     },
-    setActiveHouses(state, house) {
+    setActiveHouse(state, house) {
       state.activeHouse = house
     },
     removeHouse(state, id) {
@@ -109,7 +109,7 @@ export default new Vuex.Store({
     },
     async createHouse({ commit }, newHouse) {
       try {
-        let res = await api.post('cars', newHouse)
+        let res = await api.post('houses', newHouse)
         commit("addHouse", res.data.data)
         commit("setActiveHouse", res.data.data)
         router.push({ name: "HouseDetails", params: { id: res.data.data._id } })

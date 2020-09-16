@@ -4,7 +4,7 @@
       <div class="card">
         <img class="card-img-top" :src="houseData.imgUrl" alt />
         <div class="card-body">
-          <h4 class="card-title">{{houseData.bedrooms}} Bedrooms - {{houseData.bathrooms}} Bathrooms - {{houseData.levels}} Floors - Built: {{houseData.year}}</h4>
+          <h4 class="card-title">{{houseData.bedrooms}} Bedroom(s) - {{houseData.bathrooms}} Bathroom(s) - {{houseData.levels}} Floor(s) - Built: {{houseData.year}}</h4>
         </div>
       </div>
     </router-link>
